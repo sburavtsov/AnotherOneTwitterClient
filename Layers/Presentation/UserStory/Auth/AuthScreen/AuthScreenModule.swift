@@ -30,7 +30,7 @@ protocol AuthScreenModuleOutput: class
 
 
 // MARK: - Presenter
-class AuthScreenPresenter: AuthScreenModuleInput, AuthScreenViewOutput, AuthScreenInteractorOutput
+class AuthScreenPresenter: ViperPresenter, AuthScreenModuleInput, AuthScreenViewOutput, AuthScreenInteractorOutput
 {
     weak var view: AuthScreenViewInput!
     var interactor: AuthScreenInteractorInput!
