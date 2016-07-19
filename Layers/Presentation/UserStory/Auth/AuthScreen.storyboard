@@ -23,11 +23,20 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QS-wr-JC9">
+                                <rect key="frame" x="277" y="339" width="47" height="30"/>
+                                <state key="normal" title="Sign in"/>
+                                <connections>
+                                    <action selector="signInAction:" destination="68Q-ZY-TdF" eventType="touchUpInside" id="X0v-0W-dYH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jeR-bY-cQe" firstAttribute="centerX" secondItem="yUI-gk-84J" secondAttribute="centerX" id="7I7-TH-fQ3"/>
+                            <constraint firstItem="7QS-wr-JC9" firstAttribute="centerY" secondItem="yUI-gk-84J" secondAttribute="centerY" constant="54" id="IDW-fa-Vtv"/>
                             <constraint firstItem="jeR-bY-cQe" firstAttribute="centerY" secondItem="yUI-gk-84J" secondAttribute="centerY" id="YSP-SZ-ia4"/>
+                            <constraint firstItem="7QS-wr-JC9" firstAttribute="centerX" secondItem="yUI-gk-84J" secondAttribute="centerX" id="e9k-M3-Hed"/>
                         </constraints>
                     </view>
                 </viewController>

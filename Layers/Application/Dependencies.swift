@@ -14,8 +14,14 @@ class Dependencies
     weak var window: UIWindow!
     
     var router: Router!
-    var mainScreen: MainScreenModuleInput!
-    var authScreen: AuthScreenModuleInput!
+    
+    var mainScreen: MainScreenModuleInput  {
+        return MainScreenAssembly.createModule(output: nil)
+    }
+    
+    var authScreen: AuthScreenModuleInput {
+        return AuthScreenAssembly.createModule(output: router)
+    }
 
     init(window: UIWindow)
     {
@@ -26,8 +32,6 @@ class Dependencies
     func setup()
     {
         router = Router(dependencies: self)
-        mainScreen = MainScreenAssembly.createModule(output: nil)
-		authScreen = AuthScreenAssembly.createModule(output: router)
     }
     
     

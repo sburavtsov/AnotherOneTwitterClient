@@ -32,7 +32,7 @@ protocol MainScreenModuleOutput : class
 
 
 // MARK: - Presenter
-class MainScreenPresenter : MainScreenModuleInput, MainScreenViewOutput, MainScreenInteractorOutput
+class MainScreenPresenter : ViperPresenter, MainScreenModuleInput, MainScreenViewOutput, MainScreenInteractorOutput
 {
     weak var view: MainScreenViewInput!
     var interactor: MainScreenInteractorInput!

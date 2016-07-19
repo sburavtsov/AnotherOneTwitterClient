@@ -69,7 +69,7 @@ class ViperRouter : ViperRouterInput
     
     weak var window : UIWindow?
     
-    var navigationController : UINavigationController?
+    weak var navigationController : UINavigationController?
     
     ///
     
@@ -84,10 +84,11 @@ class ViperRouter : ViperRouterInput
     func present(using window:UIWindow)
     {
         if let vc = viewController {
-            navigationController = UINavigationController(rootViewController: vc)
-            navigationController!.navigationBarHidden = true
-            window.rootViewController = navigationController!
+            let nc = UINavigationController(rootViewController: vc)
+            nc.navigationBarHidden = true
+            window.rootViewController = nc
             window.makeKeyAndVisible()
+            navigationController = nc
             
             self.window = window
         }

@@ -25,7 +25,7 @@ protocol AuthScreenModuleInput
 //MARK: Output
 protocol AuthScreenModuleOutput: class
 {
-	func authenticated()
+	func signedIn()
 }
 
 
@@ -66,4 +66,10 @@ class AuthScreenPresenter: AuthScreenModuleInput, AuthScreenViewOutput, AuthScre
 
     // MARK: - Interactor Output
     // MARK: - View Output
+    
+    func signIn()
+    {
+        output?.signedIn()
+    }
+    
 }

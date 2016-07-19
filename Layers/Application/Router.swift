@@ -20,26 +20,19 @@ class Router
     // MARK: Router interface
     func start()
     {
-		let authenticated = false
-		
-		if authenticated {
-			resources.mainScreen.present(using: resources.window) { module in
-				module
-			}
-		} else {
-			resources.authScreen.present(using: resources.window) { module in
-				
-			}
-		}
+        resources.authScreen.present(using: resources.window) { module in
+            
+        }
+        
     }
 }
 
 extension Router: AuthScreenModuleOutput
 {
-	func authenticated()
-	{
-		resources.mainScreen.present(using: resources.window) { module in
-			module
-		}
-	}
+    func signedIn()
+    {
+        resources.mainScreen.present(using: resources.window) { module in
+            print("\(module) module presented")
+        }
+    }
 }

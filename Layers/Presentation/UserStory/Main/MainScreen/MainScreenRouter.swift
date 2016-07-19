@@ -19,6 +19,5 @@ protocol MainScreenRouterInput: ViperRouterInput
 // MARK: - Router
 class MainScreenRouter: ViperRouter, MainScreenRouterInput
 {
-    var presenter: MainScreenPresenter!
     
 }

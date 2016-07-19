@@ -16,7 +16,7 @@ protocol AuthScreenViewInput: class
 
 protocol AuthScreenViewOutput: class
 {
-
+    func signIn()
 }
 
 // MARK: - View Controller
@@ -24,6 +24,11 @@ class AuthScreenViewController: ViperViewController, AuthScreenViewInput
 {
     var output: AuthScreenViewOutput!
 
+    @IBAction func signInAction(sender: AnyObject)
+    {
+        output.signIn()
+    }
+    
     // MARK: - Life cycle
     override func viewDidLoad()
     {

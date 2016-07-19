@@ -17,7 +17,6 @@ class MainScreenAssembly
         let presenter = MainScreenPresenter()
         let router = MainScreenRouter()
         
-        router.presenter = presenter
         router.viewController = vc
         
         vc.output = presenter

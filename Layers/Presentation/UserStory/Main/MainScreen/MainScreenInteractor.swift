@@ -19,7 +19,9 @@ protocol MainScreenInteractorOutput : class
 }
 
 // MARK: - Interactor
-class MainScreenInteractor: MainScreenInteractorInput 
+class MainScreenInteractor:
+    ViperInteractor
+    , MainScreenInteractorInput
 {
     weak var output: MainScreenInteractorOutput!
 
