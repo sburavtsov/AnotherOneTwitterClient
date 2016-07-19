@@ -8,8 +8,17 @@
 
 import UIKit
 
-class MainScreenRouter: ViperRouter, MainScreenRouterInput 
+
+// MARK: - Interface
+protocol MainScreenRouterInput: ViperRouterInput
+{
+    
+}
+
+
+// MARK: - Router
+class MainScreenRouter: ViperRouter, MainScreenRouterInput
 {
     var presenter: MainScreenPresenter!
-
+    
 }

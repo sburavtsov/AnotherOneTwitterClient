@@ -7,25 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FABB0025E49669069EEFFDF /* MainScreenModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD420DFD24A242961882796C /* MainScreenModuleProtocols.swift */; };
-		25E4D8D11E1121CBA567A19C /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F424D08B27C1C9925D4FF /* MainScreenRouter.swift */; };
-		260025C6854B89123922EF95 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982752B920B68BF38C49B093 /* MainScreenView.swift */; };
-		38904E459F97E2F1AD089F77 /* MainScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66DE2BCAE5C021FF354BAD9 /* MainScreenAssembly.swift */; };
-		412AC6FDC0E52EFAD5C60890 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A0E0B26E01CC2F2FBAC90F /* MainScreenPresenter.swift */; };
-		72B5B9D9E5F276BAF9E15F8F /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C4F5095A93A42164F79FCE /* MainScreenInteractor.swift */; };
 		FE845CF91D3DE92A0008CCBF /* ThreadsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE845CF71D3DE92A0008CCBF /* ThreadsKit.framework */; };
 		FE845CFC1D3DE93B0008CCBF /* ThreadsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE845CF71D3DE92A0008CCBF /* ThreadsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FE9DFA601CF427D80082819D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9DFA551CF427D80082819D /* AppDelegate.swift */; };
-		FE9DFA611CF427D80082819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9DFA571CF427D80082819D /* Assets.xcassets */; };
-		FE9DFA621CF427D80082819D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9DFA591CF427D80082819D /* LaunchScreen.storyboard */; };
-		FEC349E21D3DEB1B00A9E152 /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC349DE1D3DEB1B00A9E152 /* ViperInteractor.swift */; };
-		FEC349E31D3DEB1B00A9E152 /* ViperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC349DF1D3DEB1B00A9E152 /* ViperModule.swift */; };
-		FEC349E41D3DEB1B00A9E152 /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC349E01D3DEB1B00A9E152 /* ViperRouter.swift */; };
-		FEC349E51D3DEB1B00A9E152 /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC349E11D3DEB1B00A9E152 /* ViperViewController.swift */; };
-		FEC349E71D3DEB7100A9E152 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC349E61D3DEB7100A9E152 /* KeyboardNotification.swift */; };
-		FEC349E91D3DEC5500A9E152 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC349E81D3DEC5500A9E152 /* MainRouter.swift */; };
-		FEC349EB1D3DEC9700A9E152 /* ViperExampleDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC349EA1D3DEC9700A9E152 /* ViperExampleDependencies.swift */; };
-		FEC349ED1D3DFEE200A9E152 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC349EC1D3DFEE200A9E152 /* MainScreen.storyboard */; };
+		FE93A8471D3E044F00202A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A82A1D3E044F00202A85 /* AppDelegate.swift */; };
+		FE93A8481D3E044F00202A85 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A82B1D3E044F00202A85 /* Dependencies.swift */; };
+		FE93A8491D3E044F00202A85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE93A82D1D3E044F00202A85 /* Assets.xcassets */; };
+		FE93A84A1D3E044F00202A85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE93A82F1D3E044F00202A85 /* LaunchScreen.storyboard */; };
+		FE93A84B1D3E044F00202A85 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8311D3E044F00202A85 /* Router.swift */; };
+		FE93A84C1D3E044F00202A85 /* KeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8351D3E044F00202A85 /* KeyboardNotification.swift */; };
+		FE93A84D1D3E044F00202A85 /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8361D3E044F00202A85 /* ViperInteractor.swift */; };
+		FE93A84E1D3E044F00202A85 /* ViperModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8371D3E044F00202A85 /* ViperModule.swift */; };
+		FE93A84F1D3E044F00202A85 /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8381D3E044F00202A85 /* ViperRouter.swift */; };
+		FE93A8501D3E044F00202A85 /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8391D3E044F00202A85 /* ViperViewController.swift */; };
+		FE93A8521D3E044F00202A85 /* MainScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8401D3E044F00202A85 /* MainScreenAssembly.swift */; };
+		FE93A8531D3E044F00202A85 /* MainScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8411D3E044F00202A85 /* MainScreenInteractor.swift */; };
+		FE93A8541D3E044F00202A85 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8421D3E044F00202A85 /* MainScreen.swift */; };
+		FE93A8551D3E044F00202A85 /* MainScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8431D3E044F00202A85 /* MainScreenRouter.swift */; };
+		FE93A8561D3E044F00202A85 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8441D3E044F00202A85 /* MainScreenView.swift */; };
+		FE93A8571D3E044F00202A85 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE93A8451D3E044F00202A85 /* MainScreen.storyboard */; };
+		FE93A8591D3E046600202A85 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8581D3E046600202A85 /* User.swift */; };
+		FE93A85B1D3E04C400202A85 /* SomeServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A85A1D3E04C400202A85 /* SomeServiceInterface.swift */; };
+		FE93A85E1D3E04F200202A85 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A85D1D3E04F200202A85 /* RoundedView.swift */; };
+		FE93A8611D3E08FC00202A85 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A8601D3E08FC00202A85 /* R.generated.swift */; };
+		FE93A8631D3E0AAD00202A85 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE93A8621D3E0AAD00202A85 /* Rswift.framework */; };
+		FE93A8641D3E0ACA00202A85 /* Rswift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE93A8621D3E0AAD00202A85 /* Rswift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FE93A8641D3E0ACA00202A85 /* Rswift.framework in Embed Frameworks */,
 				FE845CFC1D3DE93B0008CCBF /* ThreadsKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -43,26 +49,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		45A0E0B26E01CC2F2FBAC90F /* MainScreenPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
-		93C4F5095A93A42164F79FCE /* MainScreenInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
-		982752B920B68BF38C49B093 /* MainScreenView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
-		CD420DFD24A242961882796C /* MainScreenModuleProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenModuleProtocols.swift; sourceTree = "<group>"; };
-		E66DE2BCAE5C021FF354BAD9 /* MainScreenAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenAssembly.swift; sourceTree = "<group>"; };
-		EC2F424D08B27C1C9925D4FF /* MainScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
 		FE845CF71D3DE92A0008CCBF /* ThreadsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ThreadsKit.framework; path = Carthage/Build/iOS/ThreadsKit.framework; sourceTree = "<group>"; };
+		FE93A82A1D3E044F00202A85 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FE93A82B1D3E044F00202A85 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		FE93A82D1D3E044F00202A85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE93A8301D3E044F00202A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE93A8311D3E044F00202A85 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FE93A8351D3E044F00202A85 /* KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
+		FE93A8361D3E044F00202A85 /* ViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
+		FE93A8371D3E044F00202A85 /* ViperModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModule.swift; sourceTree = "<group>"; };
+		FE93A8381D3E044F00202A85 /* ViperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
+		FE93A8391D3E044F00202A85 /* ViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
+		FE93A8401D3E044F00202A85 /* MainScreenAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenAssembly.swift; sourceTree = "<group>"; };
+		FE93A8411D3E044F00202A85 /* MainScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenInteractor.swift; sourceTree = "<group>"; };
+		FE93A8421D3E044F00202A85 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		FE93A8431D3E044F00202A85 /* MainScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenRouter.swift; sourceTree = "<group>"; };
+		FE93A8441D3E044F00202A85 /* MainScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		FE93A8451D3E044F00202A85 /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
+		FE93A8581D3E046600202A85 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FE93A85A1D3E04C400202A85 /* SomeServiceInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeServiceInterface.swift; sourceTree = "<group>"; };
+		FE93A85D1D3E04F200202A85 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		FE93A8601D3E08FC00202A85 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		FE93A8621D3E0AAD00202A85 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		FE9DFA051CF426AA0082819D /* ViperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9DFA361CF427B50082819D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE9DFA551CF427D80082819D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FE9DFA571CF427D80082819D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FE9DFA5A1CF427D80082819D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FEC349DE1D3DEB1B00A9E152 /* ViperInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
-		FEC349DF1D3DEB1B00A9E152 /* ViperModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperModule.swift; sourceTree = "<group>"; };
-		FEC349E01D3DEB1B00A9E152 /* ViperRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
-		FEC349E11D3DEB1B00A9E152 /* ViperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
-		FEC349E61D3DEB7100A9E152 /* KeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotification.swift; sourceTree = "<group>"; };
-		FEC349E81D3DEC5500A9E152 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		FEC349EA1D3DEC9700A9E152 /* ViperExampleDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperExampleDependencies.swift; sourceTree = "<group>"; };
-		FEC349EC1D3DFEE200A9E152 /* MainScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,46 +81,140 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE845CF91D3DE92A0008CCBF /* ThreadsKit.framework in Frameworks */,
+				FE93A8631D3E0AAD00202A85 /* Rswift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		151CEA5744D608E2AAB7C3C4 /* Main */ = {
+		FE93A8281D3E044F00202A85 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
-				88D2FCB3F572F9F4D01A76B5 /* MainScreen */,
-				FEC349EC1D3DFEE200A9E152 /* MainScreen.storyboard */,
+				FE93A8291D3E044F00202A85 /* Application */,
+				FE93A8321D3E044F00202A85 /* Domain */,
+				FE93A8331D3E044F00202A85 /* Presentation */,
+				FE93A8461D3E044F00202A85 /* Service */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
+		FE93A8291D3E044F00202A85 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A82A1D3E044F00202A85 /* AppDelegate.swift */,
+				FE93A82B1D3E044F00202A85 /* Dependencies.swift */,
+				FE93A82C1D3E044F00202A85 /* Resources */,
+				FE93A8311D3E044F00202A85 /* Router.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FE93A82C1D3E044F00202A85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A8601D3E08FC00202A85 /* R.generated.swift */,
+				FE93A82D1D3E044F00202A85 /* Assets.xcassets */,
+				FE93A82E1D3E044F00202A85 /* LaunchScreenSB */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE93A82E1D3E044F00202A85 /* LaunchScreenSB */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A82F1D3E044F00202A85 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreenSB;
+			sourceTree = "<group>";
+		};
+		FE93A8321D3E044F00202A85 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A8581D3E046600202A85 /* User.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FE93A8331D3E044F00202A85 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A8341D3E044F00202A85 /* BaseClasses */,
+				FE93A83A1D3E044F00202A85 /* Components */,
+				FE93A83B1D3E044F00202A85 /* UserStory */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		FE93A8341D3E044F00202A85 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A8351D3E044F00202A85 /* KeyboardNotification.swift */,
+				FE93A8361D3E044F00202A85 /* ViperInteractor.swift */,
+				FE93A8371D3E044F00202A85 /* ViperModule.swift */,
+				FE93A8381D3E044F00202A85 /* ViperRouter.swift */,
+				FE93A8391D3E044F00202A85 /* ViperViewController.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		FE93A83A1D3E044F00202A85 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A85C1D3E04E500202A85 /* RoundedView */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		FE93A83B1D3E044F00202A85 /* UserStory */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A83C1D3E044F00202A85 /* Main */,
+			);
+			path = UserStory;
+			sourceTree = "<group>";
+		};
+		FE93A83C1D3E044F00202A85 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A83D1D3E044F00202A85 /* MainScreen */,
+				FE93A8451D3E044F00202A85 /* MainScreen.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		88D2FCB3F572F9F4D01A76B5 /* MainScreen */ = {
+		FE93A83D1D3E044F00202A85 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				F050A5DB5C0D4D6A5B66B340 /* Interface */,
-				982752B920B68BF38C49B093 /* MainScreenView.swift */,
-				45A0E0B26E01CC2F2FBAC90F /* MainScreenPresenter.swift */,
-				93C4F5095A93A42164F79FCE /* MainScreenInteractor.swift */,
-				EC2F424D08B27C1C9925D4FF /* MainScreenRouter.swift */,
-				E66DE2BCAE5C021FF354BAD9 /* MainScreenAssembly.swift */,
+				FE93A8401D3E044F00202A85 /* MainScreenAssembly.swift */,
+				FE93A8411D3E044F00202A85 /* MainScreenInteractor.swift */,
+				FE93A8421D3E044F00202A85 /* MainScreen.swift */,
+				FE93A8431D3E044F00202A85 /* MainScreenRouter.swift */,
+				FE93A8441D3E044F00202A85 /* MainScreenView.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
 		};
-		F050A5DB5C0D4D6A5B66B340 /* Interface */ = {
+		FE93A8461D3E044F00202A85 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				CD420DFD24A242961882796C /* MainScreenModuleProtocols.swift */,
+				FE93A85A1D3E04C400202A85 /* SomeServiceInterface.swift */,
 			);
-			path = Interface;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FE93A85C1D3E04E500202A85 /* RoundedView */ = {
+			isa = PBXGroup;
+			children = (
+				FE93A85D1D3E04F200202A85 /* RoundedView.swift */,
+			);
+			path = RoundedView;
 			sourceTree = "<group>";
 		};
 		FE9DF9FC1CF426AA0082819D = {
 			isa = PBXGroup;
 			children = (
-				FE9DFA531CF427D80082819D /* Layers */,
+				FE93A8281D3E044F00202A85 /* Layers */,
 				FE9DFA361CF427B50082819D /* Info.plist */,
 				FE9DFA061CF426AA0082819D /* Products */,
 				FE9DFA631CF42B400082819D /* Frameworks */,
@@ -125,102 +229,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FE9DFA531CF427D80082819D /* Layers */ = {
-			isa = PBXGroup;
-			children = (
-				FEC349DD1D3DEB1B00A9E152 /* BaseClasses */,
-				FE9DFA541CF427D80082819D /* Application */,
-				FE9DFA5B1CF427D80082819D /* Domain */,
-				FE9DFA5C1CF427D80082819D /* Presentation */,
-				FE9DFA5F1CF427D80082819D /* Service */,
-			);
-			path = Layers;
-			sourceTree = "<group>";
-		};
-		FE9DFA541CF427D80082819D /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				FE9DFA551CF427D80082819D /* AppDelegate.swift */,
-				FEC349E81D3DEC5500A9E152 /* MainRouter.swift */,
-				FEC349EA1D3DEC9700A9E152 /* ViperExampleDependencies.swift */,
-				FE9DFA561CF427D80082819D /* Bundle */,
-				FE9DFA581CF427D80082819D /* LaunchScreenSB */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		FE9DFA561CF427D80082819D /* Bundle */ = {
-			isa = PBXGroup;
-			children = (
-				FE9DFA571CF427D80082819D /* Assets.xcassets */,
-			);
-			path = Bundle;
-			sourceTree = "<group>";
-		};
-		FE9DFA581CF427D80082819D /* LaunchScreenSB */ = {
-			isa = PBXGroup;
-			children = (
-				FE9DFA591CF427D80082819D /* LaunchScreen.storyboard */,
-			);
-			path = LaunchScreenSB;
-			sourceTree = "<group>";
-		};
-		FE9DFA5B1CF427D80082819D /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		FE9DFA5C1CF427D80082819D /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				FE9DFA5D1CF427D80082819D /* Common */,
-				FE9DFA5E1CF427D80082819D /* UserStory */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		FE9DFA5D1CF427D80082819D /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		FE9DFA5E1CF427D80082819D /* UserStory */ = {
-			isa = PBXGroup;
-			children = (
-				151CEA5744D608E2AAB7C3C4 /* Main */,
-			);
-			path = UserStory;
-			sourceTree = "<group>";
-		};
-		FE9DFA5F1CF427D80082819D /* Service */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		FE9DFA631CF42B400082819D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE93A8621D3E0AAD00202A85 /* Rswift.framework */,
 				FE845CF71D3DE92A0008CCBF /* ThreadsKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FEC349DD1D3DEB1B00A9E152 /* BaseClasses */ = {
-			isa = PBXGroup;
-			children = (
-				FEC349E61D3DEB7100A9E152 /* KeyboardNotification.swift */,
-				FEC349DE1D3DEB1B00A9E152 /* ViperInteractor.swift */,
-				FEC349DF1D3DEB1B00A9E152 /* ViperModule.swift */,
-				FEC349E01D3DEB1B00A9E152 /* ViperRouter.swift */,
-				FEC349E11D3DEB1B00A9E152 /* ViperViewController.swift */,
-			);
-			path = BaseClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE9DFA2D1CF426AA0082819D /* Build configuration list for PBXNativeTarget "ViperExample" */;
 			buildPhases = (
+				FE93A85F1D3E080900202A85 /* ShellScript */,
 				FE9DFA011CF426AA0082819D /* Sources */,
 				FE9DFA021CF426AA0082819D /* Frameworks */,
 				FE9DFA031CF426AA0082819D /* Resources */,
@@ -282,43 +298,62 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE9DFA611CF427D80082819D /* Assets.xcassets in Resources */,
-				FE9DFA621CF427D80082819D /* LaunchScreen.storyboard in Resources */,
-				FEC349ED1D3DFEE200A9E152 /* MainScreen.storyboard in Resources */,
+				FE93A8491D3E044F00202A85 /* Assets.xcassets in Resources */,
+				FE93A84A1D3E044F00202A85 /* LaunchScreen.storyboard in Resources */,
+				FE93A8571D3E044F00202A85 /* MainScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE93A85F1D3E080900202A85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift\" \"$SRCROOT/Layers/Application/Resources\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE9DFA011CF426AA0082819D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE9DFA601CF427D80082819D /* AppDelegate.swift in Sources */,
-				FEC349E21D3DEB1B00A9E152 /* ViperInteractor.swift in Sources */,
-				FEC349EB1D3DEC9700A9E152 /* ViperExampleDependencies.swift in Sources */,
-				0FABB0025E49669069EEFFDF /* MainScreenModuleProtocols.swift in Sources */,
-				260025C6854B89123922EF95 /* MainScreenView.swift in Sources */,
-				412AC6FDC0E52EFAD5C60890 /* MainScreenPresenter.swift in Sources */,
-				FEC349E91D3DEC5500A9E152 /* MainRouter.swift in Sources */,
-				FEC349E51D3DEB1B00A9E152 /* ViperViewController.swift in Sources */,
-				72B5B9D9E5F276BAF9E15F8F /* MainScreenInteractor.swift in Sources */,
-				25E4D8D11E1121CBA567A19C /* MainScreenRouter.swift in Sources */,
-				FEC349E41D3DEB1B00A9E152 /* ViperRouter.swift in Sources */,
-				FEC349E71D3DEB7100A9E152 /* KeyboardNotification.swift in Sources */,
-				38904E459F97E2F1AD089F77 /* MainScreenAssembly.swift in Sources */,
-				FEC349E31D3DEB1B00A9E152 /* ViperModule.swift in Sources */,
+				FE93A8481D3E044F00202A85 /* Dependencies.swift in Sources */,
+				FE93A8501D3E044F00202A85 /* ViperViewController.swift in Sources */,
+				FE93A84C1D3E044F00202A85 /* KeyboardNotification.swift in Sources */,
+				FE93A8531D3E044F00202A85 /* MainScreenInteractor.swift in Sources */,
+				FE93A84F1D3E044F00202A85 /* ViperRouter.swift in Sources */,
+				FE93A8541D3E044F00202A85 /* MainScreen.swift in Sources */,
+				FE93A84B1D3E044F00202A85 /* Router.swift in Sources */,
+				FE93A8471D3E044F00202A85 /* AppDelegate.swift in Sources */,
+				FE93A8611D3E08FC00202A85 /* R.generated.swift in Sources */,
+				FE93A8591D3E046600202A85 /* User.swift in Sources */,
+				FE93A8521D3E044F00202A85 /* MainScreenAssembly.swift in Sources */,
+				FE93A8561D3E044F00202A85 /* MainScreenView.swift in Sources */,
+				FE93A85E1D3E04F200202A85 /* RoundedView.swift in Sources */,
+				FE93A85B1D3E04C400202A85 /* SomeServiceInterface.swift in Sources */,
+				FE93A84E1D3E044F00202A85 /* ViperModule.swift in Sources */,
+				FE93A84D1D3E044F00202A85 /* ViperInteractor.swift in Sources */,
+				FE93A8551D3E044F00202A85 /* MainScreenRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FE9DFA591CF427D80082819D /* LaunchScreen.storyboard */ = {
+		FE93A82F1D3E044F00202A85 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FE9DFA5A1CF427D80082819D /* Base */,
+				FE93A8301D3E044F00202A85 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

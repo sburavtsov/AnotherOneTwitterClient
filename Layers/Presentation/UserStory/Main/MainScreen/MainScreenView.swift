@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+// MARK: - Interface
 protocol MainScreenViewInput: class
 {
     
@@ -17,6 +19,7 @@ protocol MainScreenViewOutput : class
 {
     
 }
+
 
 // MARK: - View Controller
 class MainScreenViewController: ViperViewController, MainScreenViewInput
