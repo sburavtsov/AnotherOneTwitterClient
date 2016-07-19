@@ -16,14 +16,16 @@ protocol ViperViewInput: class
 
 class ViperViewController: UIViewController
 {
+    var router: ViperRouter!
     var waitView = UIView()
     var spinner = UIActivityIndicatorView()
     var alertController : UIAlertController?
-
+    
     deinit {
         print("[D] \(self) destroed")
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
+    
     
     override func viewDidLoad()
     {
@@ -107,5 +109,30 @@ class ViperViewController: UIViewController
         alertController!.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Default,handler: nil))
         presentViewController(alertController!, animated: true, completion: nil)
     }
+}
+
+
+extension ViperViewController {
+    
+    func presentChild(from parent: UIViewController)
+    {
+        router.presentChild(self, from: parent)
+    }
+    
+    func presentModal(from parent: UIViewController)
+    {
+        router.presentModal(self, from: parent)
+    }
+    
+    func present(fromWindow window:UIWindow)
+    {
+        router.present(self, using: window)
+    }
+    
+    func present(inNavigation nc: UINavigationController)
+    {
+        router.present(self, using: nc)
+    }
+    
 }
 

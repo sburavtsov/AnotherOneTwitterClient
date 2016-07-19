@@ -10,25 +10,25 @@ import UIKit
 
 class MainScreenAssembly
 {
-    class func createModule(output output: MainScreenModuleOutput?) -> MainScreenModuleInput
+    class func createModule(configure: (module: MainScreenModuleInput) -> ()) -> MainScreenViewController
     {
         let vc = R.storyboard.mainScreen.mainScreenViewController()!
         let interactor = MainScreenInteractor()
         let presenter = MainScreenPresenter()
         let router = MainScreenRouter()
         
-        router.viewController = vc
         
         vc.output = presenter
+        vc.router = router
         
         interactor.output = presenter
         
         presenter.view = vc
         presenter.interactor = interactor
         presenter.router = router
-        presenter.output = output
         
-        return presenter
+        configure(module: presenter)
+        return vc
     }
     
 }

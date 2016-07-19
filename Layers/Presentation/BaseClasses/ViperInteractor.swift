@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViperInteractor: NSObject
+class ViperInteractor
 {
     deinit
     {

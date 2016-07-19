@@ -8,7 +8,8 @@
 
 import UIKit
 
-class Router
+class Router:
+    AuthScreenModuleOutput
 {
     weak var resources: Dependencies!
     
@@ -20,19 +21,15 @@ class Router
     // MARK: Router interface
     func start()
     {
-        resources.authScreen.present(using: resources.window) { module in
-            
-        }
-        
+        AuthScreenAssembly.createModule { module in
+            module.setupDelegate(self)
+            }.present(fromWindow: resources.window)
     }
-}
 
-extension Router: AuthScreenModuleOutput
-{
+    // MARK: Auth module output
     func signedIn()
     {
-        resources.mainScreen.present(using: resources.window) { module in
-            print("\(module) module presented")
-        }
+        MainScreenAssembly.createModule { module in
+            }.present(fromWindow: resources.window)
     }
 }

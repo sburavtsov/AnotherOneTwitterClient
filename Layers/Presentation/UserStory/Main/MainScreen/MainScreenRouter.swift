@@ -10,14 +10,16 @@ import UIKit
 
 
 // MARK: - Interface
-protocol MainScreenRouterInput: ViperRouterInput
+protocol MainScreenRouterInput: class
 {
     
 }
 
 
 // MARK: - Router
-class MainScreenRouter: ViperRouter, MainScreenRouterInput
+class MainScreenRouter:
+    ViperRouter
+    , MainScreenRouterInput
 {
     
 }

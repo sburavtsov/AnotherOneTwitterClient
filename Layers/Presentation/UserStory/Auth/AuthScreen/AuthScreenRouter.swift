@@ -9,13 +9,17 @@
 import UIKit
 
 // MARK: - Interface
-protocol AuthScreenRouterInput: ViperRouterInput
+protocol AuthScreenRouterInput: class
 {
 
 }
 
 // MARK: - Router
-class AuthScreenRouter: ViperRouter, AuthScreenRouterInput
+class AuthScreenRouter:
+    ViperRouter
+    , AuthScreenRouterInput
 {
 
+    
+    
 }

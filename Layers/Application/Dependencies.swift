@@ -14,14 +14,6 @@ class Dependencies
     weak var window: UIWindow!
     
     var router: Router!
-    
-    var mainScreen: MainScreenModuleInput  {
-        return MainScreenAssembly.createModule(output: nil)
-    }
-    
-    var authScreen: AuthScreenModuleInput {
-        return AuthScreenAssembly.createModule(output: router)
-    }
 
     init(window: UIWindow)
     {

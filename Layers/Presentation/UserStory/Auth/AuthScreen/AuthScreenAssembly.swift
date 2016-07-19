@@ -10,24 +10,26 @@ import UIKit
 
 class AuthScreenAssembly
 {
-    class func createModule(output output: AuthScreenModuleOutput?) -> AuthScreenModuleInput
+    
+    class func createModule(configure: (module: AuthScreenModuleInput) -> ()) -> AuthScreenViewController
     {
         let vc = R.storyboard.authScreen.authScreenViewController()!
         let interactor = AuthScreenInteractor()
         let presenter = AuthScreenPresenter()
         let router = AuthScreenRouter()
-
-        router.viewController = vc
-
-        vc.output = presenter
-
+        
+        
         interactor.output = presenter
-
+        
         presenter.view = vc
         presenter.interactor = interactor
         presenter.router = router
-        presenter.output = output
+        
+        configure(module: presenter)
 
-        return presenter
+        vc.output = presenter
+        vc.router = router
+        return vc
     }
+    
 }
