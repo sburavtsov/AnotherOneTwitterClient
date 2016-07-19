@@ -54,12 +54,19 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
   struct storyboard {
+    /// Storyboard `AuthScreen`.
+    static let authScreen = _R.storyboard.authScreen()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `MainScreen`.
     static let mainScreen = _R.storyboard.mainScreen()
+    
+    /// `UIStoryboard(name: "AuthScreen", bundle: ...)`
+    static func authScreen(_: Void) -> UIStoryboard {
+      return UIStoryboard(resource: R.storyboard.authScreen)
+    }
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void) -> UIStoryboard {
@@ -97,6 +104,25 @@ struct _R: Rswift.Validatable {
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try mainScreen.validate()
+      try authScreen.validate()
+    }
+    
+    struct authScreen: StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = AuthScreenViewController
+      
+      let authScreenViewController = StoryboardViewControllerResource<AuthScreenViewController>(identifier: "AuthScreenViewController")
+      let bundle = _R.hostingBundle
+      let name = "AuthScreen"
+      
+      func authScreenViewController(_: Void) -> AuthScreenViewController? {
+        return UIStoryboard(resource: self).instantiateViewController(authScreenViewController)
+      }
+      
+      static func validate() throws {
+        if _R.storyboard.authScreen().authScreenViewController() == nil { throw ValidationError(description:"[R.swift] ViewController with identifier 'authScreenViewController' could not be loaded from storyboard 'AuthScreen' as 'AuthScreenViewController'.") }
+      }
+      
+      private init() {}
     }
     
     struct launchScreen: StoryboardResourceWithInitialControllerType {

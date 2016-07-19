@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DA4EE6E1D3E3E4400960324 /* AuthScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4EE691D3E3E4400960324 /* AuthScreenAssembly.swift */; };
+		2DA4EE6F1D3E3E4400960324 /* AuthScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4EE6A1D3E3E4400960324 /* AuthScreenInteractor.swift */; };
+		2DA4EE701D3E3E4400960324 /* AuthScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4EE6B1D3E3E4400960324 /* AuthScreenModule.swift */; };
+		2DA4EE711D3E3E4400960324 /* AuthScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4EE6C1D3E3E4400960324 /* AuthScreenRouter.swift */; };
+		2DA4EE721D3E3E4400960324 /* AuthScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA4EE6D1D3E3E4400960324 /* AuthScreenView.swift */; };
+		2DA4EE741D3E3E5300960324 /* AuthScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA4EE731D3E3E5300960324 /* AuthScreen.storyboard */; };
 		FE845CF91D3DE92A0008CCBF /* ThreadsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE845CF71D3DE92A0008CCBF /* ThreadsKit.framework */; };
 		FE845CFC1D3DE93B0008CCBF /* ThreadsKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE845CF71D3DE92A0008CCBF /* ThreadsKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FE93A8471D3E044F00202A85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE93A82A1D3E044F00202A85 /* AppDelegate.swift */; };
@@ -49,6 +55,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2DA4EE691D3E3E4400960324 /* AuthScreenAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreenAssembly.swift; sourceTree = "<group>"; };
+		2DA4EE6A1D3E3E4400960324 /* AuthScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreenInteractor.swift; sourceTree = "<group>"; };
+		2DA4EE6B1D3E3E4400960324 /* AuthScreenModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreenModule.swift; sourceTree = "<group>"; };
+		2DA4EE6C1D3E3E4400960324 /* AuthScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreenRouter.swift; sourceTree = "<group>"; };
+		2DA4EE6D1D3E3E4400960324 /* AuthScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreenView.swift; sourceTree = "<group>"; };
+		2DA4EE731D3E3E5300960324 /* AuthScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthScreen.storyboard; sourceTree = "<group>"; };
 		FE845CF71D3DE92A0008CCBF /* ThreadsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ThreadsKit.framework; path = Carthage/Build/iOS/ThreadsKit.framework; sourceTree = "<group>"; };
 		FE93A82A1D3E044F00202A85 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE93A82B1D3E044F00202A85 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
@@ -88,6 +100,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DA4EE671D3E3D8000960324 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2DA4EE681D3E3E4400960324 /* AuthScreen */,
+				2DA4EE731D3E3E5300960324 /* AuthScreen.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2DA4EE681D3E3E4400960324 /* AuthScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2DA4EE691D3E3E4400960324 /* AuthScreenAssembly.swift */,
+				2DA4EE6A1D3E3E4400960324 /* AuthScreenInteractor.swift */,
+				2DA4EE6B1D3E3E4400960324 /* AuthScreenModule.swift */,
+				2DA4EE6C1D3E3E4400960324 /* AuthScreenRouter.swift */,
+				2DA4EE6D1D3E3E4400960324 /* AuthScreenView.swift */,
+			);
+			path = AuthScreen;
+			sourceTree = "<group>";
+		};
 		FE93A8281D3E044F00202A85 /* Layers */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +202,7 @@
 		FE93A83B1D3E044F00202A85 /* UserStory */ = {
 			isa = PBXGroup;
 			children = (
+				2DA4EE671D3E3D8000960324 /* Auth */,
 				FE93A83C1D3E044F00202A85 /* Main */,
 			);
 			path = UserStory;
@@ -300,6 +334,7 @@
 			files = (
 				FE93A8491D3E044F00202A85 /* Assets.xcassets in Resources */,
 				FE93A84A1D3E044F00202A85 /* LaunchScreen.storyboard in Resources */,
+				2DA4EE741D3E3E5300960324 /* AuthScreen.storyboard in Resources */,
 				FE93A8571D3E044F00202A85 /* MainScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,15 +362,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA4EE6F1D3E3E4400960324 /* AuthScreenInteractor.swift in Sources */,
 				FE93A8481D3E044F00202A85 /* Dependencies.swift in Sources */,
 				FE93A8501D3E044F00202A85 /* ViperViewController.swift in Sources */,
 				FE93A84C1D3E044F00202A85 /* KeyboardNotification.swift in Sources */,
+				2DA4EE721D3E3E4400960324 /* AuthScreenView.swift in Sources */,
 				FE93A8531D3E044F00202A85 /* MainScreenInteractor.swift in Sources */,
+				2DA4EE701D3E3E4400960324 /* AuthScreenModule.swift in Sources */,
 				FE93A84F1D3E044F00202A85 /* ViperRouter.swift in Sources */,
 				FE93A8541D3E044F00202A85 /* MainScreen.swift in Sources */,
 				FE93A84B1D3E044F00202A85 /* Router.swift in Sources */,
 				FE93A8471D3E044F00202A85 /* AppDelegate.swift in Sources */,
 				FE93A8611D3E08FC00202A85 /* R.generated.swift in Sources */,
+				2DA4EE6E1D3E3E4400960324 /* AuthScreenAssembly.swift in Sources */,
+				2DA4EE711D3E3E4400960324 /* AuthScreenRouter.swift in Sources */,
 				FE93A8591D3E046600202A85 /* User.swift in Sources */,
 				FE93A8521D3E044F00202A85 /* MainScreenAssembly.swift in Sources */,
 				FE93A8561D3E044F00202A85 /* MainScreenView.swift in Sources */,

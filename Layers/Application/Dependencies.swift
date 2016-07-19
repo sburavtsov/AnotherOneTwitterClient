@@ -15,7 +15,7 @@ class Dependencies
     
     var router: Router!
     var mainScreen: MainScreenModuleInput!
-//    var authScreen: AuthScreenModuleInput!
+    var authScreen: AuthScreenModuleInput!
 
     init(window: UIWindow)
     {
@@ -27,6 +27,7 @@ class Dependencies
     {
         router = Router(dependencies: self)
         mainScreen = MainScreenAssembly.createModule(output: nil)
+		authScreen = AuthScreenAssembly.createModule(output: router)
     }
     
     
