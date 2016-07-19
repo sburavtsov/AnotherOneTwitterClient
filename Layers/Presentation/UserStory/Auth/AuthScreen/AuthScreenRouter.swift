@@ -15,11 +15,9 @@ protocol AuthScreenRouterInput: class
 }
 
 // MARK: - Router
-class AuthScreenRouter:
+final class AuthScreenRouter:
     ViperRouter
     , AuthScreenRouterInput
 {
-
-    
     
 }

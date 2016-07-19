@@ -22,7 +22,7 @@ protocol MainScreenViewOutput : class
 
 
 // MARK: - View Controller
-class MainScreenViewController:
+final class MainScreenViewController:
     ViperViewController
     , MainScreenViewInput
 {

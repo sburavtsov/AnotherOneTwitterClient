@@ -19,7 +19,7 @@ protocol MainScreenInteractorOutput : class
 }
 
 // MARK: - Interactor
-class MainScreenInteractor:
+final class MainScreenInteractor:
     ViperInteractor
     , MainScreenInteractorInput
 {

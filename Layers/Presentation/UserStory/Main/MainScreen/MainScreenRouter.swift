@@ -17,7 +17,7 @@ protocol MainScreenRouterInput: class
 
 
 // MARK: - Router
-class MainScreenRouter:
+final class MainScreenRouter:
     ViperRouter
     , MainScreenRouterInput
 {

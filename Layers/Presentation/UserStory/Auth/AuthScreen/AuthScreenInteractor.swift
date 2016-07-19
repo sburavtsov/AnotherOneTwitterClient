@@ -19,7 +19,7 @@ protocol AuthScreenInteractorOutput: class
 }
 
 // MARK: - Interactor
-class AuthScreenInteractor:
+final class AuthScreenInteractor:
     ViperInteractor
     , AuthScreenInteractorInput
 {

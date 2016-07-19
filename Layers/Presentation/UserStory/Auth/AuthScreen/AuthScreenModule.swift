@@ -22,7 +22,7 @@ protocol AuthScreenModuleOutput: class
 
 
 // MARK: - Presenter
-class AuthScreenPresenter:
+final class AuthScreenPresenter:
     ViperPresenter
     , AuthScreenModuleInput
     , AuthScreenViewOutput

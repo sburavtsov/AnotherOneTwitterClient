@@ -8,9 +8,8 @@
 
 import UIKit
 
-class AuthScreenAssembly
+final class AuthScreenAssembly
 {
-    
     class func createModule(configure: (module: AuthScreenModuleInput) -> ()) -> AuthScreenViewController
     {
         let vc = R.storyboard.authScreen.authScreenViewController()!

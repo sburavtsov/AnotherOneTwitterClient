@@ -20,7 +20,7 @@ protocol AuthScreenViewOutput: class
 }
 
 // MARK: - View Controller
-class AuthScreenViewController:
+final class AuthScreenViewController:
     ViperViewController
     , AuthScreenViewInput
 {

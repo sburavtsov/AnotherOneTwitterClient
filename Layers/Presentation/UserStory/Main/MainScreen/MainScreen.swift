@@ -24,7 +24,7 @@ protocol MainScreenModuleOutput : class
 
 
 // MARK: - Presenter
-class MainScreenPresenter:
+final class MainScreenPresenter:
     ViperPresenter
     , MainScreenModuleInput
     , MainScreenViewOutput

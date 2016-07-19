@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainScreenAssembly
+final class MainScreenAssembly
 {
     class func createModule(configure: (module: MainScreenModuleInput) -> ()) -> MainScreenViewController
     {

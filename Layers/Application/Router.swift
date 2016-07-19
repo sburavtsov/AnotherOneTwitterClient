@@ -23,13 +23,14 @@ class Router:
     {
         AuthScreenAssembly.createModule { module in
             module.setupDelegate(self)
-            }.present(fromWindow: resources.window)
+        }.present(fromWindow: resources.window)
     }
 
     // MARK: Auth module output
     func signedIn()
     {
         MainScreenAssembly.createModule { module in
-            }.present(fromWindow: resources.window)
+            
+        }.present(fromWindow: resources.window)
     }
 }
