@@ -14,7 +14,7 @@ class ViperPresenter
 {
     deinit
     {
-        print("[D] \(self) destroed")
+        print("[D] \(self) destroyed")
     }
 
 }

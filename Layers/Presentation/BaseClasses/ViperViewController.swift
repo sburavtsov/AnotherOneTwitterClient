@@ -21,7 +21,7 @@ class ViperViewController: UIViewController
     var alertController : UIAlertController?
 
     deinit {
-        print("[D] \(self) destroed")
+        print("[D] \(self) destroyed")
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     

@@ -75,7 +75,7 @@ class ViperRouter : ViperRouterInput
     
     deinit
     {
-        print("[D] \(self) destroed")
+        print("[D] \(self) destroyed")
     }
 
     
