@@ -1,0 +1,26 @@
+language: objective-c
+osx_image: xcode7.3
+xcode_project: Framework/ThreadsKit.xcodeproj
+xcode_scheme: ThreadsKit
+xcode_sdk: iphonesimulator9.3
+env:
+  global:
+  - FRAMEWORK_NAME=ThreadsKit
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_script:
+- carthage bootstrap
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive $FRAMEWORK_NAME
+deploy:
+  provider: releases
+  api_key:
+    secure: HEA2bVGGkcV6yUUuaf1+aCvBJz5BwAoydiqw6wx+vzHHdchba1v7nGCiRCdjsgTrhSmtdxQhi0QcFAzKrcZzPdCugB3rYD1gzMCX2ZyzHHroJwmx/bhNLNH43zUa9YoMPx+C3LKxauBWbO9yW+UDE3o+r0dTibPqGGyXrfBwIvfE5mQQrqHTWkm3++lTKFZ6O1y3ggyA0CI+wI1Y+52IQD9stxPARVQlNZOXcL6O7POSmJGHtEQipBlwU5Nx+ptXsvtXmd8n48ZfKEwRis+pRx+xbpmDn0jWWJtOPlaln5m3CcLBtlttGgYKAokIsg3acTUs2mWNxLqnNxkWAsGCypIYVjEKz7D0OkpH9vpZ6tGYz7ePz/W2LpTTV37dQUlemQvsIrDnku7YEEoNT00Hvp/WnKW0Qspo26WTc900esWQOG3vQqPUu3/iihhxs2TBSJUOqf+qqd5MAM9CqaT0le049oaQ8NFpGEa6cFIBJdQm92ojllUnd2EC6jkV8O4v90TP3ugT7b7ToZQhOoUPkhtQIUulMRIqF5eEspmrzRYkHr1KSb4NI4dayRKwzzRhlSV9Eu1fczCKQBHSnBgPJ2i81uWLfInXk11ZoiQIDCur5Ey+rOv3MkVb8Av1E0QP9NW+Gqk5+UIP0ZuFuSCGMlq49O6Pbsk3ptNtK1GwCuM=
+  file: $FRAMEWORK_NAME.framework.zip
+  skip_cleanup: true
+  on:
+      repo: MaksimBazarov/ThreadsKit
+      tags: true
+      condition: "$TRAVIS_TAG =~ ^v*$"
