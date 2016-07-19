@@ -12,7 +12,7 @@ class ViperInteractor
 {
     deinit
     {
-        print("[D] \(self) destroed")
+        print("[D] \(self) destroyed")
     }
 
 }
