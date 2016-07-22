@@ -1,5 +1,8 @@
 # VIPER Example of whole application
 
+Issues welcome
+PR welcome
+
 Now in progress and with old style code, in plans:
 - Service layer (API, DataSources)
 - Domain Model layer
