@@ -1,6 +1,6 @@
 # VIPER Example of whole application
 
-Issues welcome
+Issues welcome /
 PR welcome
 
 Now in progress and with old style code, in plans:
